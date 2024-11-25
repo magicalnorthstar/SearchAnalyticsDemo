@@ -1,0 +1,11 @@
+connect to EC2 from local
+ssh -i "mykeys.pem" ec2-user@54.88.152.226
+
+sudo yum install python3 -y  # For Amazon Linux
+python3 -m venv myenv        # Create a virtual environment
+source myenv/bin/activate    # Activate the virtual environment
+pip install pinecone-client psycopg2 transformers tensorflow fastapi uvicorn
+
+for deploying python code files
+scp -i "mykeys.pem" searchengine_with_API.py ec2-user@54.88.152.226:/home/ec2-user/myfolder/
+scp -i "mykeys.pem" code_without_API.py ec2-user@54.88.152.226:/home/ec2-user/myfolder/
