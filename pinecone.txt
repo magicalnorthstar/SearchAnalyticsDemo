@@ -1,0 +1,9 @@
+Create a Pinecone Account
+Before you can use Pinecone, you need to create an account on Pinecone.io.
+1.	Go to the Pinecone website: https://www.pinecone.io/.
+2.	Sign up for a new account or log in if you already have one.
+3.	Once you're logged in, you'll have access to the Pinecone dashboard, where you can manage your indexes and API keys.
+API Key - <enter your key>
+Initialize Pinecone in Your Python Script
+Set Up Pinecone for Vector Search
+Create index manually
