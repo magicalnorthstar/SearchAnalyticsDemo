@@ -2,7 +2,7 @@ follow the steps in the word doc for creating RDS from AWS management console
 follow below after installing RDS service :
 Trying to connect the db - postgres now:
 psql -h database-1.c74q2qwyk2gh.us-east-1.rds.amazonaws.com -U postgres -d postgres -p 5432
-password: Silver123
+password: <enter your password>
 
 After successful connection - 
 
