@@ -1,0 +1,24 @@
+follow the steps in the word doc for creating RDS from AWS management console
+follow below after installing RDS service :
+Trying to connect the db - postgres now:
+psql -h database-1.c74q2qwyk2gh.us-east-1.rds.amazonaws.com -U postgres -d postgres -p 5432
+password: Silver123
+
+After successful connection - 
+
+Create table:
+CREATE TABLE products (
+    product_id SERIAL PRIMARY KEY,
+    product_name VARCHAR(255) NOT NULL,
+    description TEXT,
+    price DECIMAL(10, 2),
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+\dt
+INSERT INTO products (product_name, description, price)
+VALUES ('Product A', 'Description of Product A', 19.99);
+INSERT INTO products (product_name, description, price)
+VALUES 
+    ('Product B', 'Description of Product B', 29.99),
+    ('Product C', 'Description of Product C', 39.99);
+SELECT * FROM products;
