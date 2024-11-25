@@ -1,0 +1,22 @@
+Install python 3.8 
+$ which amazon-linux-extras
+/usr/bin/amazon-linux-extras
+
+sudo yum install -y amazon-linux-extras
+
+amazon-linux-extras | grep -i python
+44  python3.8                available    [ =stable ]
+
+sudo amazon-linux-extras enable python3.8
+
+sudo yum install python3.8
+
+$ python3.8 -V
+Python 3.8.18
+
+Set Up a Virtual Environment on EC2
+
+python3.8 -m venv myenv  # Create a virtual environment
+source myenv/bin/activate  # Activate the environment
+
+
