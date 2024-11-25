@@ -1,0 +1,13 @@
+
+- **`requirements.txt`**: Include all Python dependencies for your project, such as:
+
+```txt
+fastapi
+uvicorn
+pinecone-client
+psycopg2
+psycopg2-binary
+transformers
+tensorflow
+boto3
+sentencepiece
